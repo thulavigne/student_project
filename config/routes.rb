@@ -1,5 +1,9 @@
 StudentProject::Application.routes.draw do
+  devise_for :students
+
   resources :projects
+
+  root :to => "projects#index"
 
 
   # The priority is based upon order of creation:
